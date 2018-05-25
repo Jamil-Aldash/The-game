@@ -124,7 +124,7 @@ class Dealer {
 				break;
 			case "Clubs":
 				num[3]+=1*13;
-				num[3]=num[3]+num[c.value];
+				num[3]=num[3]+c.value;
 				break;
 			}
 			return num;
