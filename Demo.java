@@ -30,7 +30,7 @@ public class Demo {
 		System.out.println("The value of Spades  "+b[1]);
 		System.out.println("The value of Diamonds  "+b[2]);
 		System.out.println("The value of Clubs  "+b[3]);
-		
+		System.out.println("The value of the cards=  " + dealer.convertToValue(dealer.getCard()));
 	}
 	
 }
@@ -112,15 +112,15 @@ class Dealer {
 			switch (hand[a].suit) {
 			case "Hearts":
 				num[0]+=1*13;
-				num[0]=num[0]+num[c.value];
+				num[0]=num[0]+c.value;
 				break;
 			case "Spades":
 				num[1]+=1*13;
-				num[1]=num[1]+num[c.value];
+				num[1]=num[1]+c.value;
 				break;
 			case "Diamonds":
 				num[2]+=1*13;
-				num[2]=num[2]+num[c.value];
+				num[2]=num[2]+c.value;
 				break;
 			case "Clubs":
 				num[3]+=1*13;
